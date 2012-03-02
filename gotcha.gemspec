@@ -8,7 +8,7 @@ spec = Gem::Specification.new do |s|
   s.add_development_dependency('actionpack')
   s.description = 'A smart captcha library'
   s.email = 'john.crepezzi@patch.com'
-  s.files = Dir['lib/**/*.rb'] + Dir['gotchas/*.rb'] + 'config/locales/pt-BR.yml'
+  s.files = Dir['lib/**/*.rb'] + Dir['gotchas/*.rb']
   s.homepage = 'http://seejohnrun.github.com/gotcha/'
   s.platform = Gem::Platform::RUBY
   s.require_paths = ['lib']
