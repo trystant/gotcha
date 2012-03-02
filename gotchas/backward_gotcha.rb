@@ -15,4 +15,4 @@ class BackwardGotcha < Gotcha::Base
 
 end
 
-Gotcha.register_type BackwardGotcha
+#Gotcha.register_type BackwardGotcha
