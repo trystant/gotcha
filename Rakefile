@@ -1,4 +1,4 @@
-require 'spec/rake/spectask'
+#require 'spec/rake/spectask'
 require File.dirname(__FILE__) + '/lib/gotcha/version'
  
 task :build do
@@ -13,13 +13,13 @@ task :release => :build do
   system "gem push gotcha-#{Gotcha::VERSION}.gem"
 end
  
-Spec::Rake::SpecTask.new(:test) do |t|
-  t.spec_files = FileList['spec/**/*_spec.rb']
-  fail_on_error = true # be explicit
-end
+# Spec::Rake::SpecTask.new(:test) do |t|
+#   t.spec_files = FileList['spec/**/*_spec.rb']
+#   fail_on_error = true # be explicit
+# end
  
-Spec::Rake::SpecTask.new(:rcov) do |t|
-  t.spec_files = FileList['spec/**/*_spec.rb']
-  t.rcov = true
-  fail_on_error = true # be explicit
-end
+# Spec::Rake::SpecTask.new(:rcov) do |t|
+#   t.spec_files = FileList['spec/**/*_spec.rb']
+#   t.rcov = true
+#   fail_on_error = true # be explicit
+# end
