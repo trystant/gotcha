@@ -1,0 +1,9 @@
+# encoding: UTF-8
+"en":
+  sum:
+    of:
+      text: "What is the sum of %{n1} and %{n2}?"
+    howmuch:
+      text: "What is %{n1} + %{n2}?"
+  backwards:
+    text: "What is '%{word}' backwards?"
