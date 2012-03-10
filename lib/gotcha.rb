@@ -18,7 +18,7 @@ module Gotcha
   # Get a random Gotcha from the registered types
   def self.random
     if !@gotcha_types.nil? && type = random_type
-      type.new 
+      type.new
     end
   end
 

@@ -27,4 +27,4 @@ class SumGotcha < Gotcha::Base
 
 end
 
-Gotcha.register_type SumGotcha
+#Gotcha.register_type SumGotcha
