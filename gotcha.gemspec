@@ -6,7 +6,6 @@ spec = Gem::Specification.new do |s|
   s.author = 'John Crepezzi'
   s.add_development_dependency('actionpack')
   s.add_development_dependency('autotest-standalone')
-  s.add_development_dependency('i18n')
   s.add_development_dependency('rspec')
   s.description = 'A smart captcha library'
   s.email = 'john.crepezzi@patch.com'
