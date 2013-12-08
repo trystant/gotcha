@@ -6,6 +6,7 @@ spec = Gem::Specification.new do |s|
   s.author = 'John Crepezzi'
   s.add_development_dependency('rspec')
   s.add_development_dependency('actionpack')
+  s.add_development_dependency('rake')
   s.description = 'A smart captcha library'
   s.email = 'john.crepezzi@patch.com'
   s.files = Dir['lib/**/*.rb'] + Dir['gotchas/*.rb']
