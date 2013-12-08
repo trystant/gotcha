@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/trystant/gotcha.png)](https://travis-ci.org/trystant/gotcha)
 # Gotcha
 
 Adding captchas to some action should be really easy.  It shouldn't require a migration, like [Brain Buster](https://github.com/rsanheim/brain_buster) or API calls like [reCAPTCHA](http://www.google.com/recaptcha).  Gotcha is an easy way to ask (custom) questions of your users in order for them to perform some action (like submitting a form).
