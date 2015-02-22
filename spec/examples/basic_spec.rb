@@ -17,12 +17,12 @@ describe Gotcha do
   end
 
   it 'should not skip validation by default' do
-    expect(Gotcha.skip_validation?).to be_false
+    expect(Gotcha.skip_validation?).to be_falsey
   end
 
   it 'should be able to be told to skip validation' do
     Gotcha.skip_validation = true
-    expect(Gotcha.skip_validation?).to be true
+    expect(Gotcha.skip_validation?).to be_truthy
   end
 
   it 'should be able to select a random type of gotcha' do
@@ -37,17 +37,17 @@ describe Gotcha do
 
   it 'should be able to check the answer' do
     gotcha = Gotcha.random
-    expect(gotcha.correct?(4)).to be_true
+    expect(gotcha.correct?(4)).to be_truthy
   end
 
   it 'should be able to check the answer even if we supply a string' do
     gotcha = Gotcha.random
-    expect(gotcha.correct?('4')).to be_true
+    expect(gotcha.correct?('4')).to be_truthy
   end
 
   it 'should be able to verify it got the wrong answer' do
     gotcha = Gotcha.random
-    expect(gotcha.correct?(5)).to be_false
+    expect(gotcha.correct?(5)).to be_falsey
   end
 
 end

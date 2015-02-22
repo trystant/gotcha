@@ -14,7 +14,7 @@ describe SumGotcha do
 
     # should get the right answer for this simple one
     expect(matches).not_to be_nil
-    expect(gotcha.correct?($1.to_i + $2.to_i)).to be_true
+    expect(gotcha.correct?($1.to_i + $2.to_i)).to be_truthy
   end
 
 end
