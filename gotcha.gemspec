@@ -7,6 +7,7 @@ spec = Gem::Specification.new do |s|
   s.add_development_dependency('rspec')
   s.add_development_dependency('actionpack')
   s.add_development_dependency('rake')
+  s.add_development_dependency('transpec')
   s.description = 'A smart captcha library'
   s.email = 'john.crepezzi@patch.com'
   s.files = Dir['lib/**/*.rb'] + Dir['gotchas/*.rb']
