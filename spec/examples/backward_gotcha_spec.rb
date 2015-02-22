@@ -9,7 +9,7 @@ describe BackwardGotcha do
 
   it 'should be able to ask a question' do
     gotcha = Gotcha.random
-    gotcha.question.should_not be_empty
+    expect(gotcha.question).not_to be_empty
   end
 
 end

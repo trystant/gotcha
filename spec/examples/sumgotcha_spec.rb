@@ -13,8 +13,8 @@ describe SumGotcha do
     matches = gotcha.question.match /[^\d]+(\d+)[^\d]+(\d+)[^\d]+/
 
     # should get the right answer for this simple one
-    matches.should_not be_nil
-    gotcha.correct?($1.to_i + $2.to_i).should be_true
+    expect(matches).not_to be_nil
+    expect(gotcha.correct?($1.to_i + $2.to_i)).to be_true
   end
 
 end
