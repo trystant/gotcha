@@ -1,13 +1,13 @@
 require File.dirname(__FILE__) + '/lib/gotcha/version'
 
 spec = Gem::Specification.new do |s|
-  
+
   s.name = 'gotcha'
   s.author = 'John Crepezzi'
-  s.add_development_dependency('rspec', '3.2')
+  s.add_development_dependency('rspec')
   s.add_development_dependency('actionpack')
   s.add_development_dependency('rake')
-  s.add_development_dependency('transpec')
+  s.add_development_dependency('simplecov')
   s.add_development_dependency('pry-byebug')
   s.description = 'A smart captcha library'
   s.email = 'john.crepezzi@patch.com'
